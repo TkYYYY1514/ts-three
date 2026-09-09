@@ -1,6 +1,6 @@
 <template>
     <div class="tabs no-select">
-        <div v-for="item in tabsList" :key="item.label" :class="{ active: item.name.includes($route.name) }"
+        <div v-for="item in tabsList" :key="item.label" :class="{ active: item.name.includes(($route.name ?? '') as string) }"
             @click="handleClick(item.name[0] ?? '')">
             <span>{{ item.label }}</span><span style="font-size: 12px; color: red;">
             </span>
