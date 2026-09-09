@@ -99,7 +99,7 @@ const initScene = () => {
 const loadModel = () => {
   const loader = new GLTFLoader();
   // 模型路径: 放在 public/ 下
-  const modelPath = `${import.meta.env.BASE_URL}/gltf/Building/Building.gltf`;
+  const modelPath = `${import.meta.env.BASE_URL}/glb/Building.glb`;
 
   loader.load(
     modelPath,
