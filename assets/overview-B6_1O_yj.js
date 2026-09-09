@@ -1,1 +1,0 @@
-import{a as e,i as t,n,r,t as i}from"./index-sOVZnjCt.js";var a={};function o(i,a){return e(),t(n,null,[a[0]||=r(`div`,{class:`side left`},[r(`p`,null,`园区总览 left`)],-1),a[1]||=r(`div`,{class:`side right`},[r(`p`,null,`园区总览 right`)],-1)],64)}var s=i(a,[[`render`,o]]);export{s as default};
