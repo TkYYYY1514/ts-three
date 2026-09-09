@@ -1,0 +1,84 @@
+@import './assets/font.css';
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+#app {
+  background-color: rgba(174, 167, 167, 0.51);
+  padding: 0px;
+  font-family: AlibabaPuHuiTiR;
+  width: 100vw;  
+  height: 100vh;
+  overflow: hidden;
+  color:#fff;
+}
+
+.side {
+  position: absolute;
+  top: 5%;
+  z-index: 1;
+  height: 80%;
+  display: flex;
+  gap: 18px;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+
+  &.left {
+    left: 5%;
+  }
+
+  &.right {
+    right: 5%;
+  }
+
+  >.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+
+
+/* 定义滚动条的宽度 */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  display: var(--scroll-show);
+}
+
+/* 定义滚动条轨道的颜色 */
+::-webkit-scrollbar-track {
+  background: unset;
+  display: var(--scroll-show);
+}
+
+/* 定义滚动条的颜色 */
+::-webkit-scrollbar-thumb {
+  background:  #1990F7cc;
+  border-radius: 2px;
+  display: var(--scroll-show);
+}
+
+/* 定义滚动条的hover效果 */
+::-webkit-scrollbar-thumb:hover {
+  /* background: #555; */
+}
+
+

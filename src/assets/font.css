@@ -1,0 +1,47 @@
+@font-face {
+  font-family: YouSheBiaoTiHei;
+  src: url("./font/YouSheBiaoTiHei-2.ttf");
+}
+
+@font-face {
+  font-family: AlimamaShuHeiTi;
+  src: url("./font/AlimamaShuHeiTi-Bold.ttf");
+}
+
+@font-face {
+    font-family: AlibabaPuHuiTiL;
+    src: url("./font/Alibaba-PuHuiTi-Light.ttf");
+}
+
+@font-face {
+    font-family: AlibabaPuHuiTiR;
+    src: url("./font/Alibaba-PuHuiTi-Regular.ttf");
+}
+
+@font-face {
+    font-family: AlibabaPuHuiTiM;
+    src: url("./font/Alibaba-PuHuiTi-Medium.ttf");
+}
+
+@font-face {
+    font-family: AlibabaPuHuiTiB;
+    src: url("./font/Alibaba-PuHuiTi-Bold.otf");
+}
+
+@font-face {
+    font-family: DIN;
+    src: url("./font/din-bold_.otf");
+}
+
+@font-face {
+    font-family: PangMenZhengDaoBiaoTiTiMianFeiBan;
+    src: url("./font/PangMenZhengDaoBiaoTiTiMianFeiBan.ttf");
+}
+
+
+
+
+@font-face {
+    font-family: "iconfont";
+    src: url("./font/iconfont.ttf") format("truetype");
+  }
