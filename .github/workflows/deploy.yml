@@ -13,23 +13,26 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      # 1. 升级到 v4
+      - uses: actions/checkout@v4
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        # 2. 升级到 v4
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # 3. 使用 Node.js 22 LTS，兼容性更好
+          node-version: 22
 
       - name: Install Dependencies
         run: npm install
 
       - name: Build
-        env:
-          DEPLOY_TARGET: github
+        # 4. 直接运行构建，移除未使用的环境变量
         run: npm run build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        # 5. 升级到 v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
